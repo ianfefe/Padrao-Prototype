@@ -1,0 +1,13 @@
+%%{init: {"flowchart": {"curve": "linear"}, "class": {"curve": "linear"}}}%%
+classDiagram
+    direction TD
+
+    class Cloneable {
+        <<interface>>
+    }
+    class Livro {}
+    class Editora {}
+
+    Cloneable <|.. Livro
+    Cloneable <|.. Editora
+    Livro --> "1" Editora
